@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+<style>
+    .barcode {
+        left: 50%;
+        box-shadow: 1px 0 0 1px, 5px 0 0 1px, 10px 0 0 1px, 11px 0 0 1px, 15px 0 0 1px, 18px 0 0 1px, 22px 0 0 1px, 23px 0 0 1px, 26px 0 0 1px, 30px 0 0 1px, 35px 0 0 1px, 37px 0 0 1px, 41px 0 0 1px, 44px 0 0 1px, 47px 0 0 1px, 51px 0 0 1px, 56px 0 0 1px, 59px 0 0 1px, 64px 0 0 1px, 68px 0 0 1px, 72px 0 0 1px, 74px 0 0 1px, 77px 0 0 1px, 81px 0 0 1px, 85px 0 0 1px, 88px 0 0 1px, 92px 0 0 1px, 95px 0 0 1px, 96px 0 0 1px, 97px 0 0 1px, 101px 0 0 1px, 105px 0 0 1px, 109px 0 0 1px, 110px 0 0 1px, 113px 0 0 1px, 116px 0 0 1px, 120px 0 0 1px, 123px 0 0 1px, 127px 0 0 1px, 130px 0 0 1px, 131px 0 0 1px, 134px 0 0 1px, 135px 0 0 1px, 138px 0 0 1px, 141px 0 0 1px, 144px 0 0 1px, 147px 0 0 1px, 148px 0 0 1px, 151px 0 0 1px, 155px 0 0 1px, 158px 0 0 1px, 162px 0 0 1px, 165px 0 0 1px, 168px 0 0 1px, 173px 0 0 1px, 176px 0 0 1px, 177px 0 0 1px, 180px 0 0 1px;
+        display: inline-block;
+        transform: translateX(-90px);
+    }
+</style>
+<img src="{% static 'img/logo_horizontal.png' %}" class="position-absolute top-0 start-0 " alt="" width="100Px">
+<div class="flex flex-col items-center justify-center min-h-screen bg-center bg-cover "
+    style="background-image: url(https://img.freepik.com/photos-gratuite/enfants-africains-tir-complet-ordinateur-portable_23-2148860436.jpg?w=2000&t=st=1665582291~exp=1665582891~hmac=cde2d47ca2df64582db872e21c61f917c978a478b40087a0d8858e73350bc1fb)">
+    
+    <div class="">
+    
+       
+   
+    <h1 class="text-6xl xs:text-sm font-bold text-white pt-1">Ngor Education</h1>
+    <span class="pt-0 mt-0 text-white " style="letter-spacing: 9px;">l'education pour tout un chacun</span>
+    <div class="absolute bg-blue-100 opacity-0 inset-0 z-0"></div>
+    </div>
+   
+    <div class="max-w-md w-full h-full mx-auto z-10  rounded-3xl">
+        <div class="flex flex-col w-full rounded items-center justify-center" style="background-color:rgba(236, 233, 230, 0.45) ;">
+           
+            <p>{{ message }}</p>
+            <form method="post" class="w-all items-center justify-center">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <div class="items-center justify-center center">
+                <button type="submit" class=" m-auto hover:shadow-form w-50 rounded-md bg-[#6A64F1] py-2 px-8 text-center text-base font-semibold text-white outline-none m-3 ">Se connecter</button>
+                </div>
+                <p>Pas encore membre ? <a href="{% url 'signup' %}">Inscrivez-vous maintenant !</a></p>
+            </form>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- <div class="news">
+        {% for title,link in mydict %}
+            <h1>{{title}}</h1>
+            <h5>{{link}}</h5>
+           
+        {% endfor %}
+        </div> -->
+{% endblock content %}

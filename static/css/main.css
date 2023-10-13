@@ -1,0 +1,322 @@
+   
+form p{
+    padding: 20px;
+    margin:auto;
+}
+form label{
+    display: block;
+    text-align: center;
+    letter-spacing: 3px;
+}
+form input{
+    border-radius: 5px;
+    padding:8px;
+    width: 100%;
+}
+div .box{
+    background-color: rgba(255, 0, 0, 0.139);
+}
+
+
+.bounce {
+    animation-timing-function: cubic-bezier(.14, .85, .82, 1.06);
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.delay-250 {
+    animation-delay: 0.25s;
+}
+
+.delay-350 {
+    animation-delay: 0.35s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-1000 {
+    animation-delay: 1s;
+}
+
+.delay-750 {
+    animation-delay: 0.75s;
+}
+
+/* top to botttom */
+.sliding-ttb {
+    animation-name: sliding-ttb;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+/* botttom to top */
+.sliding-btt {
+    animation-name: sliding-btt;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+/* left to right */
+.sliding-ltr {
+    animation-name: sliding-ltr;
+    animation-duration: 700ms;
+
+    animation-fill-mode: forwards;
+}
+
+/* right to left */
+.sliding-rtl {
+    animation-name: sliding-rtl;
+    animation-duration: 700ms;
+
+    animation-fill-mode: forwards;
+}
+
+.slide-ttb {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.slide-btt {
+    clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0 0%);
+}
+
+.slide-ltr {
+    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);
+}
+
+.slide-rtl {
+    clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 0% 100%);
+}
+
+
+@keyframes sliding-ttb {
+    0% {
+        transform: translateY(-100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes sliding-btt {
+    0% {
+        transform: translateY(100%);
+        clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0 0%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes sliding-ltr {
+    0% {
+        transform: translateX(-100%);
+        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);
+    }
+
+    100% {
+        transform: translateX(0%);
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 0);
+    }
+}
+
+@keyframes sliding-rtl {
+    0% {
+        transform: translateX(100%);
+        clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 0% 100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+        clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .barcode {
+        left: 50%;
+        box-shadow: 1px 0 0 1px, 5px 0 0 1px, 10px 0 0 1px, 11px 0 0 1px, 15px 0 0 1px, 18px 0 0 1px, 22px 0 0 1px, 23px 0 0 1px, 26px 0 0 1px, 30px 0 0 1px, 35px 0 0 1px, 37px 0 0 1px, 41px 0 0 1px, 44px 0 0 1px, 47px 0 0 1px, 51px 0 0 1px, 56px 0 0 1px, 59px 0 0 1px, 64px 0 0 1px, 68px 0 0 1px, 72px 0 0 1px, 74px 0 0 1px, 77px 0 0 1px, 81px 0 0 1px, 85px 0 0 1px, 88px 0 0 1px, 92px 0 0 1px, 95px 0 0 1px, 96px 0 0 1px, 97px 0 0 1px, 101px 0 0 1px, 105px 0 0 1px, 109px 0 0 1px, 110px 0 0 1px, 113px 0 0 1px, 116px 0 0 1px, 120px 0 0 1px, 123px 0 0 1px, 127px 0 0 1px, 130px 0 0 1px, 131px 0 0 1px, 134px 0 0 1px, 135px 0 0 1px, 138px 0 0 1px, 141px 0 0 1px, 144px 0 0 1px, 147px 0 0 1px, 148px 0 0 1px, 151px 0 0 1px, 155px 0 0 1px, 158px 0 0 1px, 162px 0 0 1px, 165px 0 0 1px, 168px 0 0 1px, 173px 0 0 1px, 176px 0 0 1px, 177px 0 0 1px, 180px 0 0 1px;
+        display: inline-block;
+        transform: translateX(-90px);
+    }
+
+.dark .dark\:divide-gray-700> :not([hidden])~ :not([hidden]) {
+    border-color: rgba(55, 65, 81);
+}
+
+.dark .dark\:bg-gray-50 {
+    background-color: rgba(249, 250, 251);
+}
+
+.dark .dark\:bg-gray-100 {
+    background-color: rgba(243, 244, 246);
+}
+
+.dark .dark\:bg-gray-600 {
+    background-color: rgba(75, 85, 99);
+}
+
+.dark .dark\:bg-gray-700 {
+    background-color: rgba(55, 65, 81);
+}
+
+.dark .dark\:bg-gray-800 {
+    background-color: rgba(31, 41, 55);
+}
+
+.dark .dark\:bg-gray-900 {
+    background-color: rgba(17, 24, 39);
+}
+
+.dark .dark\:bg-red-700 {
+    background-color: rgba(185, 28, 28);
+}
+
+.dark .dark\:bg-green-700 {
+    background-color: rgba(4, 120, 87);
+}
+
+.dark .dark\:hover\:bg-gray-200:hover {
+    background-color: rgba(229, 231, 235);
+}
+
+.dark .dark\:hover\:bg-gray-600:hover {
+    background-color: rgba(75, 85, 99);
+}
+
+.dark .dark\:hover\:bg-gray-700:hover {
+    background-color: rgba(55, 65, 81);
+}
+
+.dark .dark\:hover\:bg-gray-900:hover {
+    background-color: rgba(17, 24, 39);
+}
+
+.dark .dark\:border-gray-100 {
+    border-color: rgba(243, 244, 246);
+}
+
+.dark .dark\:border-gray-400 {
+    border-color: rgba(156, 163, 175);
+}
+
+.dark .dark\:border-gray-500 {
+    border-color: rgba(107, 114, 128);
+}
+
+.dark .dark\:border-gray-600 {
+    border-color: rgba(75, 85, 99);
+}
+
+.dark .dark\:border-gray-700 {
+    border-color: rgba(55, 65, 81);
+}
+
+.dark .dark\:border-gray-900 {
+    border-color: rgba(17, 24, 39);
+}
+
+.dark .dark\:hover\:border-gray-800:hover {
+    border-color: rgba(31, 41, 55);
+}
+
+.dark .dark\:text-white {
+    color: rgba(255, 255, 255);
+}
+
+.dark .dark\:text-gray-50 {
+    color: rgba(249, 250, 251);
+}
+
+.dark .dark\:text-gray-100 {
+    color: rgba(243, 244, 246);
+}
+
+.dark .dark\:text-gray-200 {
+    color: rgba(229, 231, 235);
+}
+
+.dark .dark\:text-gray-400 {
+    color: rgba(156, 163, 175);
+}
+
+.dark .dark\:text-gray-500 {
+    color: rgba(107, 114, 128);
+}
+
+.dark .dark\:text-gray-700 {
+    color: rgba(55, 65, 81);
+}
+
+.dark .dark\:text-gray-800 {
+    color: rgba(31, 41, 55);
+}
+
+.dark .dark\:text-red-100 {
+    color: rgba(254, 226, 226);
+}
+
+.dark .dark\:text-green-100 {
+    color: rgba(209, 250, 229);
+}
+
+.dark .dark\:text-blue-400 {
+    color: rgba(96, 165, 250);
+}
+
+.dark .group:hover .dark\:group-hover\:text-gray-500 {
+    color: rgba(107, 114, 128);
+}
+
+.dark .group:focus .dark\:group-focus\:text-gray-700 {
+    color: rgba(55, 65, 81);
+}
+
+.dark .dark\:hover\:text-gray-100:hover {
+    color: rgba(243, 244, 246);
+}
+
+.dark .dark\:hover\:text-blue-500:hover {
+    color: rgba(59, 130, 246);
+}
+
+/* Custom style */
+.header-right {
+    width: calc(100% - 3.5rem);
+}
+
+.sidebar:hover {
+    width: 16rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-right {
+        width: calc(100% - 16rem);
+    }
+}
